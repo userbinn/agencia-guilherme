@@ -1,393 +1,243 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Home</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/geral imagens/favcon.png" sizes="32x32">
-    <link rel="shortcut icon" href="images/geral imagens/favcon.png">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Meus Serviços">
-    <meta property="og:description" content="Um resumo da minha jornada, explorando desda paixão por tecnologia até meu foco em segurança cibernética.">
-    <meta property="og:image" content="https://iili.io/dgdlTWg.th.png"> <!-- Link da imagem que você forneceu -->
-    <meta property="og:url" content="https://meusite.com">
-    <meta property="og:type" content="website"> <!-- Tipo de conteúdo correto -->
-    <meta property="og:site_name" content="Minha Jornada">
-    
-    <!-- Outros estilos e scripts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Método - @Notfakebelo</title>
+    <meta name="description" content="Aplicativo de Traders com sinais assertivos e interface profissional e responsiva.">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/source/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="STREET.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    
-    <!-- O conteúdo do site continua aqui -->    
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio - Criatividade sem Limites</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
-
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        /* Menu padrão (desktop) */
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline-block;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        nav ul li a:hover {
-            color: #ffd700;
-        }
-
-        /* Menu Hamburguer (Mobile) */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            gap: 5px;
-            cursor: pointer;
-        }
-
-        .menu-toggle span {
-            width: 25px;
-            height: 3px;
-            background-color: #fff;
-            display: block;
-            transition: all 0.3s;
-        }
-
-        .menu-mobile {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            background-color: #333;
-            width: 100%;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s;
-        }
-
-        .menu-mobile ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu-mobile ul li {
-            text-align: center;
-            padding: 10px;
-            border-bottom: 1px solid #444;
-        }
-
-        .menu-mobile ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-
-        .menu-mobile ul li a:hover {
-            color: #ffd700;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: url('testers.webp') no-repeat center center/cover;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            padding: 0 20px;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-
-        .hero a.button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.1rem;
-            background-color: #ffd700;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            color: #333;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .hero a.button:hover {
-            background-color: #ffcc00;
-        }
-
-        /* Main Section */
-        .main-content {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .content-block {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            flex-wrap: wrap;
-        }
-
-        .content-block img {
-            max-width: 100%;
-            border-radius: 8px;
-            flex: 1;
-            margin-bottom: 20px;
-        }
-
-        .content-text {
-            flex: 1;
-            padding-left: 20px;
-        }
-
-        .content-text h3 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .content-text p {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #666;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            margin-top: 40px;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        footer ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0 0;
-            padding: 0;
-        }
-
-        footer ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        footer ul li a:hover {
-            color: #ffd700;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            /* Esconder menu padrão e exibir o hamburguer */
-            nav ul {
-                display: none;
-            }
-
-            .menu-toggle {
-                display: flex;
-            }
-
-            .menu-mobile {
-                display: none;
-                flex-direction: column;
-            }
-
-            .categories {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .content-text {
-                padding-left: 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero {
-                height: 50vh;
-            }
-
-            .hero h2 {
-                font-size: 1.8rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .hero a.button {
-                font-size: 1rem;
-            }
-
-            .categories {
-                grid-template-columns: 1fr;
-            }
-
-            .content-block {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .content-text {
-                padding-left: 0;
-            }
-
-            .content-block img {
-                margin-bottom: 20px;
-            }
-        }
-    </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Meu Portfólio</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="trajetoria.html">Trajetória</a></li>
-                    <li><a href="servico.html">Serviços</a></li>
-                    <li><a href="contatos.html">Contato</a></li>
-                    <li><a href="politicas.html">Política e Ética</a></li>
-                </ul>
-                <div class="menu-toggle" id="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-        <div class="menu-mobile" id="menu-mobile">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="trajetoria.html">Trajetória</a></li>
-                <li><a href="servico.html">Serviços</a></li>
-                <li><a href="contatos.html">Contato</a></li>
-                <li><a href="politicas.html">Política e Ética</a></li>
-            </ul>
+    <!-- (1) HEADER DO SITE -->
+    <header class="header">
+        <div class="header-overlay">
+            <h1>TRADER MILIONÁRIO</h1>
+            <img src="STREET.png" alt="Logo da Plataforma" class="header-logo">
+            <p>Plataforma Métodos Secretos</p>
         </div>
     </header>
+    
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div>
-            <h2>Bem-vindo ao Meu Portfólio</h2>
-            <p>Criatividade sem limites. Soluções personalizadas para cada necessidade.</p>
-            <a href="servico.html" class="button">Saiba Mais</a>
-        </div>
-    </section>
+ <!-- (2) SISTEMA DE PESSOAS, PESSOAS NO SITE -->
+<div class="center-container">
+    <div class="live-container">
+        <span class="live-icon">🟢 LIVE</span>
+        <span class="live-count" id="liveCount">662</span>
+        <span class="live-text">Pessoas lucrando agora</span>
+    </div>
+</div>
 
-    <!-- Conteúdo -->
-    <section class="main-content">
-        <div class="content-block">
-            <img src="images/geral imagens/politc.png" alt="Imagem Descrição 1">
-            <div class="content-text">
-                <h3>Nossos Projetos Recentes</h3>
-                <p>Explore alguns dos projetos mais inovadores e criativos que desenvolvemos recentemente. Nosso foco está sempre em oferecer soluções personalizadas que atendam às necessidades de cada cliente.</p>
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+
+        <!-- (3) NAVEGAÇÃO -->
+        <nav class="navigation">
+            <a href="ComoLucrar" class="nav-link">Como Fúnciona</a>
+            <a href="#traders" class="nav-link">Métodos</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+        </nav>
+
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+
+      <!-- (4) CARDS DOS TRADERS -->
+<section id="traders">
+    <h2 style="text-align: center; color: #00ff6b;">Métodos - Pagantes</h2>
+    <div class="grid-container">
+
+        <!-- Card 1 -->
+        <div class="trader-card">
+            <div class="trader-info">
+                <img src="Sinais.jpg" alt="Sinais Secreto">
+                <h3 class="Sinais Secreto">SINAIS SECRETO</h3>
+            </div>
+            <div class="progress-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar1" style="width: 91%;" data-progress="high">
+                        <span class="progress-text" id="progressText1">91%</span>
+                    </div>
+                </div>
+                <!-- Botão clicável -->
+                <a href="pagina-jogar.html" class="play-button">JOGAR</a>
             </div>
         </div>
 
-        <div class="content-block">
-            <div class="content-text">
-                <h3>Parceiros Confiáveis</h3>
-                <p>Trabalhamos com empresas líderes no mercado, fornecendo serviços de alta qualidade. Nossos parceiros são cuidadosamente selecionados para garantir os melhores resultados.</p>
-            </div>
-            <img src="images/geral imagens/Empresa.png" alt="Imagem Descrição 2">
-        </div>
-    </section>
 
-    <!-- Rodapé -->
+        <!-- Card 2 -->
+        <div class="trader-card">
+            <div class="trader-info">
+                <img src="Multipla.JPG" alt="Banca Multipla">
+                <h3 class="Banca Multipla">BANCA MÚLTIPLA</h3>
+            </div>
+            <div class="progress-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar2" style="width: 20%;" data-progress="low">
+                        <span class="progress-text" id="progressText2">20%</span>
+                    </div>
+                </div>
+                <!-- Botão clicável -->
+                <a href="pagina-jogar.html" class="play-button">JOGAR</a>
+            </div>  
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trader-card">
+            <div class="trader-info">
+                <img src="TraderSinais.JPG" alt="Opções Binaria">
+                <h3 class="Opções Binaria">OPÇÕES BINÁRIA</h3>
+            </div>
+            <div class="progress-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar3" style="width: 50%;" data-progress="medium">
+                        <span class="progress-text" id="progressText3">50%</span>
+                    </div>
+                </div>
+                <!-- Botão clicável -->
+                <a href="pagina-jogar.html" class="play-button">JOGAR</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trader-card">
+            <div class="trader-info">
+                <img src="Btc.JPG" alt="Trader Cripto">
+                <h3 class="Trader Cripto">TRADER CRIPTO</h3>
+            </div>
+            <div class="progress-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar4" style="width: 50%;" data-progress="medium">
+                        <span class="progress-text" id="progressText4">50%</span>
+                    </div>
+                </div>
+                <!-- Botão clicável -->
+                <a href="pagina-jogar.html" class="play-button">JOGAR</a>
+            </div>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="trader-card">
+            <div class="trader-info">
+                <img src="Roleta.JPG" alt="Cassino Roleta">
+                <h3 class="Cassino Roleta">CASSINO ROLETA</h3>
+            </div>
+            <div class="progress-wrapper">
+                <div class="progress-container">
+                   <div class="progress-bar" id="progressBar5" style="width: 50%;" data-progress="medium">
+                       <span class="progress-text" id="progressText5">50%</span>
+                   </div>
+               </div>
+               <!-- Botão clicável -->
+               <a href="pagina-jogar.html" class="play-button">JOGAR</a>
+           </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trader-card">
+            <div class="trader-info">
+                <img src="apostasEsportiva.JPG" alt="Aposta Esportiva">
+                <h3 class="Aposta Esportiva">APOSTA ESPORTIVA</h3>
+            </div>
+            <div class="progress-wrapper">
+                <div class="progress-container">
+                   <div class="progress-bar" id="progressBar6" style="width: 50%;" data-progress="medium">
+                       <span class="progress-text" id="progressText6">50%</span>
+                   </div>
+               </div>
+               <!-- Botão clicável -->
+               <a href="pagina-jogar.html" class="play-button">JOGAR</a>
+           </div>
+        </div>
+
+    </div> <!-- Fechar a grid-container aqui -->
+</section>
+
+
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+
+<!-- (5) BANNER - REDES SOCIAIS -->
+<div class="banner-container">
+    <div class="banner-content">
+        <div class="banner-option active">
+            <i class="bi bi-whatsapp social-icon"></i> Entre no Grupo do WhatsApp!
+            <a href="https://chat.whatsapp.com/IOgJXpU0Y6YC4xCHHZpf6B" class="social-button">Participar</a>
+        </div>
+        <div class="banner-option">
+            <i class="bi bi-instagram social-icon"></i> Siga-nos no Instagram!
+            <a href="https://instagram.com/notfakebelo" class="social-button">Seguir</a>
+        </div>
+        <div class="banner-option">
+            <i class="bi bi-telegram social-icon"></i> Participe do Canal no Telegram!
+            <a href="https://t.me/+KKTDh74N0mYwMDg5" class="social-button">Acessar</a>
+        </div>
+    </div>
+</div>
+
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+
+        <!-- (6) FAQ -->
+        <section id="faq" class="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <details>
+                    <summary>
+                        <span>O que é o Trader Vision?</span>
+                        <i class="icon-arrow"></i>
+                    </summary>
+                    <p>Uma plataforma de sinais e insights de trade.</p>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>
+                        <span>Como faço para começar a usar?</span>
+                        <i class="icon-arrow"></i>
+                    </summary>
+                    <p>Inscreva-se no nosso site e receba alertas e sinais de trade diretamente no seu dispositivo.</p>
+                </details>
+            </div>
+        </section>
+        
+
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+ <!--------------------------------------------------->
+
+        <!-- (7) SISTEMA DE PAGAMENTO, ANA SACOU 100 REAIS -->
+        <div class="withdraw-notification" id="withdrawNotification">
+            <span class="status-icon">●</span>
+            <span class="user-name" id="userName">Larissa O.</span>
+            <span class="action-text">Sacou:</span>
+            <span class="amount" id="amount">R$ 1.037,00</span>
+        </div>
+
+
+
     <footer>
-        <div class="container">
-            <p>&copy; Guilherme Vinicius - Todos os direitos reservados.</p>
-            <ul>
-                <li><a href="https://wa.me/5521992249812">WhatsApp</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
+        <p>&copy; 2024 Trader Vision. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Script para menu hamburguer -->
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const menuMobile = document.getElementById('menu-mobile');
-
-        menuToggle.addEventListener('click', () => {
-            menuMobile.style.display = menuMobile.style.display === 'flex' ? 'none' : 'flex';
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
